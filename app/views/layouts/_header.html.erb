@@ -16,9 +16,15 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-            <% if user_signed_in? %>
-            <h4><%= link_to raw('<span class="glyphicon glyphicon-chevron-right"></span> Dashboard'), "dashboard" %>
-            <%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Logout'), destroy_user_session_path, method: :delete %></h4>
+          <% if user_signed_in? && !current_user.testscore.nil?%>
+            <h4>
+              <%= link_to raw('<span class="glyphicon glyphicon-chevron-right"></span> Dashboard'), "dashboard" %>
+              <%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Logout'), destroy_user_session_path, method: :delete %>
+            </h4>
+          <% elsif user_signed_in? %>
+            <h4>Welcome, <%= "#{current_user.username}" %>
+              <%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Logout'), destroy_user_session_path, method: :delete %>
+            </h4>
           <% else %>
             <h4><%= link_to raw('<span class="glyphicon glyphicon-chevron-right"></span> Helpers'), new_user_session_path %></h4>
           <% end %>
