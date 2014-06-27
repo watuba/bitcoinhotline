@@ -1,0 +1,346 @@
+<%= form_for(@answer) do |f| %>
+  <% if @answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
+
+      <ul>
+      <% @answer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    1. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score1, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score1, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    2. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score2, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score2, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    3. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score3, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score3, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    4. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score4, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score4, "0" %>
+    </p>
+  </div>
+  <h3>Who created Bitcoin?</h3>
+  <div class="form-group">
+    5. We don’t know for sure
+    <br>
+    <p>
+    True <%= f.radio_button :score5, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score5, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    6. Satoshi Nakamoto
+    <br>
+    <p>
+    True <%= f.radio_button :score6, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score6, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    7. Gavin Andresen
+    <br>
+    <p>
+    True <%= f.radio_button :score7, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score7, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    8. Dorian Nakamoto
+    <br>
+    <p>
+    True <%= f.radio_button :score8, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score8, "1" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    9. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score9, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score9, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    10. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score10, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score10, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    11. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score11, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score11, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    12. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score12, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score12, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    13. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score13, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score13, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    14. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score14, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score14, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    15. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score15, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score15, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    16. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score16, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score16, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    17. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score17, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score17, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    18. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score18, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score18, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    19. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score19, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score19, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    20. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score20, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score20, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    21. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score21, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score21, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    22. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score22, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score22, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    23. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score23, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score23, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    24. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score24, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score24, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    25. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score25, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score25, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    26. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score26, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score26, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    27. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score27, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score27, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    28. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score28, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score28, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    29. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score29, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score29, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    30. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score30, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score30, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    31. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score31, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score31, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    32. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score32, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score32, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    33. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score33, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score33, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    34. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score34, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score34, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    35. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score35, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score35, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    36. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score36, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score36, "0" %>
+    </p>
+  </div>
+  <h3>What is the Blockchain?</h3>
+  <div class="form-group">
+    37. A public ledger of all transactions
+    <br>
+    <p>
+    True <%= f.radio_button :score37, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score37, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    38. A decentralized consensus
+    <br>
+    <p>
+    True <%= f.radio_button :score38, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score38, "0" %>
+    </p>
+  </div>
+  <div class="form-group">
+    39. A single point of failure for the network
+    <br>
+    <p>
+    True <%= f.radio_button :score39, "0" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score39, "1" %>
+    </p>
+  </div>
+  <div class="form-group">
+    40. Something that is susceptible to strong processing power attacks
+    <br>
+    <p>
+    True <%= f.radio_button :score40, "1" %>&nbsp;&nbsp;
+    False <%= f.radio_button :score40, "0" %>
+    </p>
+  </div>
+  <div class="actions">
+    <%= f.submit value: "Submit", class: "btn btn-primary"%>
+  </div>
+<% end %>

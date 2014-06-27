@@ -1,0 +1,103 @@
+<h1>Listing answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Score1</th>
+      <th>Score2</th>
+      <th>Score3</th>
+      <th>Score4</th>
+      <th>Score5</th>
+      <th>Score6</th>
+      <th>Score7</th>
+      <th>Score8</th>
+      <th>Score9</th>
+      <th>Score10</th>
+      <th>Score11</th>
+      <th>Score12</th>
+      <th>Score13</th>
+      <th>Score14</th>
+      <th>Score15</th>
+      <th>Score16</th>
+      <th>Score17</th>
+      <th>Score18</th>
+      <th>Score19</th>
+      <th>Score20</th>
+      <th>Score21</th>
+      <th>Score22</th>
+      <th>Score23</th>
+      <th>Score24</th>
+      <th>Score25</th>
+      <th>Score26</th>
+      <th>Score27</th>
+      <th>Score28</th>
+      <th>Score29</th>
+      <th>Score30</th>
+      <th>Score31</th>
+      <th>Score32</th>
+      <th>Score33</th>
+      <th>Score34</th>
+      <th>Score35</th>
+      <th>Score36</th>
+      <th>Score37</th>
+      <th>Score38</th>
+      <th>Score39</th>
+      <th>Score40</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @answers.each do |answer| %>
+      <tr>
+        <td><%= answer.score1 %></td>
+        <td><%= answer.score2 %></td>
+        <td><%= answer.score3 %></td>
+        <td><%= answer.score4 %></td>
+        <td><%= answer.score5 %></td>
+        <td><%= answer.score6 %></td>
+        <td><%= answer.score7 %></td>
+        <td><%= answer.score8 %></td>
+        <td><%= answer.score9 %></td>
+        <td><%= answer.score10 %></td>
+        <td><%= answer.score11 %></td>
+        <td><%= answer.score12 %></td>
+        <td><%= answer.score13 %></td>
+        <td><%= answer.score14 %></td>
+        <td><%= answer.score15 %></td>
+        <td><%= answer.score16 %></td>
+        <td><%= answer.score17 %></td>
+        <td><%= answer.score18 %></td>
+        <td><%= answer.score19 %></td>
+        <td><%= answer.score20 %></td>
+        <td><%= answer.score21 %></td>
+        <td><%= answer.score22 %></td>
+        <td><%= answer.score23 %></td>
+        <td><%= answer.score24 %></td>
+        <td><%= answer.score25 %></td>
+        <td><%= answer.score26 %></td>
+        <td><%= answer.score27 %></td>
+        <td><%= answer.score28 %></td>
+        <td><%= answer.score29 %></td>
+        <td><%= answer.score30 %></td>
+        <td><%= answer.score31 %></td>
+        <td><%= answer.score32 %></td>
+        <td><%= answer.score33 %></td>
+        <td><%= answer.score34 %></td>
+        <td><%= answer.score35 %></td>
+        <td><%= answer.score36 %></td>
+        <td><%= answer.score37 %></td>
+        <td><%= answer.score38 %></td>
+        <td><%= answer.score39 %></td>
+        <td><%= answer.score40 %></td>
+        <td><%= link_to 'Show', answer %></td>
+        <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
+        <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Answer', new_answer_path %>
