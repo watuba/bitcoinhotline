@@ -15,3 +15,8 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$('#form1 :radio').click(function() {
+    var disabled = $('#form1 li').filter(function() { return $(':radio:checked', this).length == 0; }).length > 0;
+    $('#form1 .find').prop('disabled', disabled);
+});
