@@ -1,16 +1,15 @@
 <div class="container-fluid">
-	<div class="dashbox panel panel-default right">
-		<div class="panel-heading center">
-			Stats for <%= "#{current_user.username}" %>
-		</div>
+	<div class="dashbox panel panel-info right">
 		<div class="panel-body">
-			<p>
-				Rank: 
-				<% if current_user.testscore > 39 %> Purple belt
-				<% elsif current_user.testscore > 35 %> Orange belt
-				<% elsif current_user.testscore > 25 %> Yellow belt 
-				<% elsif current_user.testscore > 10 %> White belt <% end %>
+			
+			<h2><%= "#{current_user.username}" %></h2>
+			<p class="text-info"><p class="text-primary">
+				<% if current_user.testscore > 39 %> Level&nbsp 4
+				<% elsif current_user.testscore > 35 %> Level&nbsp 3
+				<% elsif current_user.testscore > 25 %> Level&nbsp 2 
+				<% elsif current_user.testscore > 10 %> Level&nbsp 1 <% end %>
 				<!-- Button trigger modal -->
+				&nbsp&nbsp
 				<button class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">
 				  <i>i</i>
 				</button>
@@ -24,25 +23,29 @@
 				        <h4 class="modal-title" id="myModalLabel">Rankings</h4>
 				      </div>
 				      <div class="modal-body">
-				        White Belt - Starting point for most helpers <br>
-				        Yellow Belt - Starting point for more advanced helpers, or 20 hours of chats <br>
-				        Orange Belt - 40 hours of chats <br>
-				        Purple Belt - 60 hours of chats <br>
+				        Level 1 - Starting point for most helpers <br>
+				        Level 2 - Starting point for more advanced helpers, or 20 hours of chats <br>
+				        Level 3 - 40 hours of chats <br>
+				        Level 4 - 60 hours of chats <br>
+				        Level 5 - <br>
+				        Level 6 - <br>
+				        ...
 
 				      </div>
 				    </div>
 				  </div>
 				</div>
-			</p>
-				Experience: 
-				<br>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+			<p class="text-info">
+				
+				<div class="progress progress-striped">
+				  
+				  <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+				    <strong><p class="left"> &nbsp XP <%= "#{current_user.testscore.to_i}" %>/100</p></strong>
 				    <span class="sr-only">45% Complete</span>
 				  </div>
 				</div>
-				<br>
-				Badges: 
+			<p class="text-info">
+				Badges
 				<!-- Button trigger modal -->
 				<button class="btn btn-info btn-xs" data-toggle="modal" data-target="#Badges">
 				  <i>i</i>
@@ -55,23 +58,27 @@
 				        <h4 class="modal-title" id="myModalLabel">Available Badges</h4>
 				      </div>
 				      <div class="modal-body">
-				        Awesome Badge - Created account and answered first chat <br>
-				        Weekend Warrior - 30 hours of answering chats over the weekend <br>
-				        Bitsaurus - Got 10 5 star reviews <br>
-				        Bitoctopus - Answered 100 chats in a week <br>
-				        AND MANY MORE
+				      	<span class="label label-success">Leap of Faith</span>
+				      	Signed up and passed questionnaire <br>
+				        <span class="label label-danger">Awesome Badge</span>
+				          Answered first chat <br>
+				        <span class="label label-primary">Weekend Warrior</span>
+				         30 hours of answering chats over the weekend <br>
+				        <span class="label label-info">Bitsaurus</span>
+				         Got 10 5 star reviews <br>
+				        <span class="label label-warning">Bitoctopus</span>
+				         Answered 100 chats in a week <br>
 				        ...
 				      </div>
 				    </div>
 				  </div>
 				</div>
-				<br><br>
-				<li>Signed Up Badge</li>
+				<span class="label label-success">Leap of Faith</span>
 			</p>
 		</div>
 	</div>
 
-	<div class="panel panel-default">
+	<div class="panel panel-primary">
 		<div class="panel-heading center">
 			Available Chats
 		</div>
